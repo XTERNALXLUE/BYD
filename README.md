@@ -1,6 +1,8 @@
-# BYD——Build Your Dictionary——背(B) 英语(Y) 单词(D)
+# BYD——Build Your Dictionary
 
-> 自用英语背单词工具
+> 自用背(B)英语(Y)单词(D)工具
+>
+> “背，是为了不背。——高中化学老师”
 
 ## 启动：
 
