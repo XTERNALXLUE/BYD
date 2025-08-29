@@ -1,4 +1,4 @@
-# BYD——Build Your Dictionary
+# BYD——Build Your Dictionary——背(B) 英语(Y) 单词(D)
 
 > 自用英语背单词工具
 
