@@ -185,23 +185,22 @@ class EnglishDictionary:
                 self.clear_screen()
                 print("=== Vocabulary Quiz ===")
                 if is_correct:
-                    print("✓ Correct!")
                     score += 1
                     new_count, _ = self.memory_data[word]
                     if new_count >= 27:
                         print(f"🎉 Congratulations! '{word}' has been mastered!")
                 else:
                     print("✗ Wrong!")
-                print(f"\n{word} => {correct_meaning}")
+                    print(f"\n{word} => {correct_meaning}")
+                    print("\nPress any key for next question...")
+                    msvcrt.getch()
                 
             except:
                 self.clear_screen()
                 print("=== Vocabulary Quiz ===")
                 print("Invalid input!")
-                print(f"\n{word} => {correct_meaning}")
+                msvcrt.getch()
             
-            print("\nPress any key for next question...")
-            msvcrt.getch()
         
         self.save_dictionary()
         self.clear_screen()
@@ -344,7 +343,7 @@ class EnglishDictionary:
                 elif choice == '3':
                     self.show_all_words()
                 else:
-                    print("\n\nInvalid choice. Please enter 1, 2, 3 or Q.")
+                    print("\nInvalid choice. Please enter 1, 2, 3 or Q.")
                     print("\nPress any key to continue...")
                     msvcrt.getch()
                     
