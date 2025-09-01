@@ -99,8 +99,6 @@ class EnglishDictionary:
             self.memory_data[word.lower()] = (0, datetime.now().strftime('%Y-%m-%d'))
             print(f"\nAdded: {word} => {self.dictionary[word.lower()]}")
             self.save_dictionary()
-            print("\nPress any key to continue...")
-            msvcrt.getch()
 
     def lookup_word(self, word):
         self.clear_screen()
