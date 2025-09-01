@@ -172,7 +172,10 @@ class EnglishDictionary:
             user_choice = self.get_key_input()
             
             if user_choice == 'q':
-                break
+                if total_attempted == 1:
+                    return
+                else:
+                    break
                 
             try:
                 choice_num = int(user_choice)
