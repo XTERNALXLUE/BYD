@@ -321,11 +321,15 @@ class EnglishDictionary:
         print("=" * 29)
 
     def search_word_mode(self):
-        self.clear_screen()
-        print("=== Search/Add Word ===")
-        word = input("Enter word('q' to quit): ").strip()
-        if word and word.lower() != 'q':
-            self.lookup_word(word)
+        while True:
+            self.clear_screen()
+            print("=== Search/Add Word ===")
+            word = input("Enter word('q' to quit): ").strip()
+            if word:
+                if word.lower() != 'q':
+                    self.lookup_word(word)
+                else:
+                    break
 
     def run(self):
         while True:
@@ -335,7 +339,6 @@ class EnglishDictionary:
                 choice = self.get_key_input()
                 
                 if choice == 'q':
-                    self.clear_screen()
                     break
                 elif choice == '1':
                     self.search_word_mode()
