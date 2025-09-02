@@ -11,7 +11,7 @@ python -m venv venv_name
 
 .\venv_name\Scripts\activate
 
-pip install -r requirements.txt
+pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 python DBY.py
 ```
